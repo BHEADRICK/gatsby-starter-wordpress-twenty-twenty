@@ -28,7 +28,7 @@ const Layout = ({ children, bodyClass }) => {
 
       <MenuModal isActive={backdropActive} toggleBackdrop={toggleBackdrop} />
 
-      <main id="site-content" role="main">
+      <main id="site-content" class="site-main" role="main">
         {children}
       </main>
 

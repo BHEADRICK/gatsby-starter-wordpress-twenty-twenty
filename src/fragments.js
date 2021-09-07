@@ -114,4 +114,26 @@ export const fragments = graphql`
       }
     }
   }
+
+
+  fragment ProductContent on WpProduct {
+    name
+    slug
+    description
+    shortDescription
+    databaseId
+    image {
+        altText
+        localFile {
+          ...HeroImage
+          publicURL
+        }
+        mediaDetails {
+          width
+          height
+        }
+    }
+  }
+
+
 `

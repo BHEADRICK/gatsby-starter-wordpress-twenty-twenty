@@ -47,6 +47,32 @@ module.exports = {
         // we don't need these fields
         excludeFieldNames: [`blocksJSON`, `saveContent`],
         type: {
+          Customer: {
+        exclude: true
+          },
+          Order: {
+            exclude: true
+          },
+          PostFormat: {
+            exclude: true
+          },
+          ShippingMethod: {
+            exclude: true
+          }, ShippingClass: {
+            exclude: true
+          }, Refund: {
+            exclude: true
+          }, UserRole: {
+            exclude: true
+          }, PaymentGateway: {
+            exclude: true
+          }, Coupon: {
+            exclude: true
+          }, TaxRate: {
+            exclude: true
+          }, VisibleProduct: {
+            exclude: true
+          },
           Post: {
             limit:
               process.env.NODE_ENV === `development`

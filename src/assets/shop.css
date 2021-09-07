@@ -1,0 +1,95 @@
+.shop-products{
+    position: relative;
+}
+
+ul.products::before,ul.products::after {
+    content: "";
+    display: table
+}
+
+ul.products::after {
+    clear: both
+}
+
+ul.products,.wc-block-grid__products {
+    margin-left: 0;
+    margin-bottom: 0;
+    clear: both
+}
+
+ul.products li.product,ul.products .wc-block-grid__product,.wc-block-grid__products li.product,.wc-block-grid__products .wc-block-grid__product {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 4.235801032em;
+    text-align: center;
+    position: relative
+}
+
+ul.products li.product .star-rating,ul.products .wc-block-grid__product .star-rating,.wc-block-grid__products li.product .star-rating,.wc-block-grid__products .wc-block-grid__product .star-rating {
+    margin: 0 auto .5407911001em
+}
+
+ul.products li.product .woocommerce-LoopProduct-link,ul.products .wc-block-grid__product .woocommerce-LoopProduct-link,.wc-block-grid__products li.product .woocommerce-LoopProduct-link,.wc-block-grid__products .wc-block-grid__product .woocommerce-LoopProduct-link {
+    display: block
+}
+
+ul.products li.product .price,ul.products .wc-block-grid__product .price,.wc-block-grid__products li.product .price,.wc-block-grid__products .wc-block-grid__product .price {
+    display: block;
+    color: #43454b;
+    font-weight: 400;
+    margin-bottom: 1rem
+}
+
+ul.products li.product .price ins,ul.products .wc-block-grid__product .price ins,.wc-block-grid__products li.product .price ins,.wc-block-grid__products .wc-block-grid__product .price ins {
+    margin-left: .6180469716em;
+    background-color: transparent
+}
+
+ul.products li.product .woocommerce-loop-product__title,ul.products li.product .woocommerce-loop-category__title,ul.products li.product .wc-block-grid__product-title,ul.products li.product .wc-block-grid__product-title>a,ul.products .wc-block-grid__product .woocommerce-loop-product__title,ul.products .wc-block-grid__product .woocommerce-loop-category__title,ul.products .wc-block-grid__product .wc-block-grid__product-title,ul.products .wc-block-grid__product .wc-block-grid__product-title>a,.wc-block-grid__products li.product .woocommerce-loop-product__title,.wc-block-grid__products li.product .woocommerce-loop-category__title,.wc-block-grid__products li.product .wc-block-grid__product-title,.wc-block-grid__products li.product .wc-block-grid__product-title>a,.wc-block-grid__products .wc-block-grid__product .woocommerce-loop-product__title,.wc-block-grid__products .wc-block-grid__product .woocommerce-loop-category__title,.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title,.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title>a {
+    font-weight: 400;
+    margin-bottom: .5407911001em
+}
+
+ul.products li.product .woocommerce-loop-product__title,ul.products li.product .woocommerce-loop-category__title,ul.products li.product .wc-block-grid__product-title,ul.products li.product .wc-block-grid__product-title>a:not(.has-font-size),ul.products .wc-block-grid__product .woocommerce-loop-product__title,ul.products .wc-block-grid__product .woocommerce-loop-category__title,ul.products .wc-block-grid__product .wc-block-grid__product-title,ul.products .wc-block-grid__product .wc-block-grid__product-title>a:not(.has-font-size),.wc-block-grid__products li.product .woocommerce-loop-product__title,.wc-block-grid__products li.product .woocommerce-loop-category__title,.wc-block-grid__products li.product .wc-block-grid__product-title,.wc-block-grid__products li.product .wc-block-grid__product-title>a:not(.has-font-size),.wc-block-grid__products .wc-block-grid__product .woocommerce-loop-product__title,.wc-block-grid__products .wc-block-grid__product .woocommerce-loop-category__title,.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title,.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title>a:not(.has-font-size) {
+    font-size: 1rem
+}
+
+ul.products li.product .star-rating,ul.products .wc-block-grid__product .star-rating,.wc-block-grid__products li.product .star-rating,.wc-block-grid__products .wc-block-grid__product .star-rating {
+    font-size: .875em
+}
+
+ul.products li.product img,ul.products .wc-block-grid__product img,.wc-block-grid__products li.product img,.wc-block-grid__products .wc-block-grid__product img {
+    display: block;
+    margin: 0 auto 1.618em
+}
+
+ul.products li.product.product-category img,ul.products .wc-block-grid__product.product-category img,.wc-block-grid__products li.product.product-category img,.wc-block-grid__products .wc-block-grid__product.product-category img {
+    margin-bottom: 1.618em
+}
+
+ul.products li.product .button,ul.products .wc-block-grid__product .button,.wc-block-grid__products li.product .button,.wc-block-grid__products .wc-block-grid__product .button {
+    margin-bottom: .236em
+}
+
+.site-main ul.products.columns-3 li.product {
+    width: 29.4117647059%;
+    float: left;
+    margin-right: 5.8823529412%
+}
+
+ul.products li.product.last,ul.products .wc-block-grid__product.last,.wc-block-grid__products li.product.last,.wc-block-grid__products .wc-block-grid__product.last {
+    margin-right: 0 !important
+}
+ul.products li.product .woocommerce-loop-product__title,ul.products li.product .woocommerce-loop-category__title,ul.products li.product .wc-block-grid__product-title,ul.products li.product .wc-block-grid__product-title>a:not(.has-font-size),ul.products .wc-block-grid__product .woocommerce-loop-product__title,ul.products .wc-block-grid__product .woocommerce-loop-category__title,ul.products .wc-block-grid__product .wc-block-grid__product-title,ul.products .wc-block-grid__product .wc-block-grid__product-title>a:not(.has-font-size),.wc-block-grid__products li.product .woocommerce-loop-product__title,.wc-block-grid__products li.product .woocommerce-loop-category__title,.wc-block-grid__products li.product .wc-block-grid__product-title,.wc-block-grid__products li.product .wc-block-grid__product-title>a:not(.has-font-size),.wc-block-grid__products .wc-block-grid__product .woocommerce-loop-product__title,.wc-block-grid__products .wc-block-grid__product .woocommerce-loop-category__title,.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title,.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title>a:not(.has-font-size) {
+    font-size: 1rem
+}
+
+ul.products .featured-media, .featured-media-inner, .gatsby-image-wrapper{
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+    clear: both;
+    font-weight: 300;
+    margin: 0 0 .5407911001em;
+    color: #131315
+}
