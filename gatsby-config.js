@@ -15,6 +15,18 @@ module.exports = {
     siteUrl: process.env.SITE_URL,
   },
   plugins: [
+    {
+    resolve: `gatsby-plugin-netlify`,
+    options: {
+      headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
+      allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+      mergeSecurityHeaders: true, // boolean to turn off the default security headers
+      mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
+      mergeCachingHeaders: true, // boolean to turn off the default caching headers
+      transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
+      generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+    },
+  },
     `gatsby-plugin-image`,
     `gatsby-plugin-notifications`,
     `gatsby-plugin-sharp`,
@@ -28,6 +40,11 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
+        schema: {
+      perPage: 20, // currently set to 100
+      requestConcurrency: 5, // currently set to 15
+      previewRequestConcurrency: 2, // currently set to 5
+    },
         url: process.env.WPGRAPHQL_URL,
         verbose: true,
         develop: {

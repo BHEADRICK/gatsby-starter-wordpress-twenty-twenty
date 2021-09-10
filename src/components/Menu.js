@@ -5,7 +5,7 @@ import UniversalLink from "./UniversalLink"
 const Menu = () => {
   const { wpMenu } = useStaticQuery(graphql`
     {
-      wpMenu(slug: { eq: "main-menu" }) {
+      wpMenu(name: { eq: "main-menu" }) {
         name
         menuItems {
           nodes {

@@ -20,6 +20,7 @@
     "dotenv": "^9.0.2",
     "gatsby": "^3.5.0",
     "gatsby-plugin-image": "^1.5.0",
+    "gatsby-plugin-netlify": "^3.14.0",
     "gatsby-plugin-notifications": "^0.0.2",
     "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sharp": "^3.5.0",
@@ -27,10 +28,10 @@
     "gatsby-source-wordpress": "^5.5.0",
     "gatsby-transformer-sharp": "^3.5.0",
     "prop-types": "^15.7.2",
+    "query-string": "^7.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "query-string": "^7.0.0",
     "urql": "^2.0.2"
   },
   "devDependencies": {
