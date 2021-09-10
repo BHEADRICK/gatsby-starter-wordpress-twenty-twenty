@@ -64,11 +64,28 @@ const product = ({ data }) => {
 }
 
 export const query = graphql`
-  query product($id: String!) {
-    page: wpProduct(id: { eq: $id }) {
-      ...ProductContent
+{
+  wpProductCategory(slug: {eq: "accessories"}) {
+    products {
+        nodes {
+      id
+      slug
+      name
+      databaseId
+      image {
+        altText
+        localFile {
+          publicURL
+        }
+        mediaDetails {
+          width
+          height
+        }
+      }
+    }
     }
   }
+}
 `
 
 export default product;
