@@ -7,7 +7,8 @@ import FeaturedMedia from "../../components/FeaturedMedia"
 // import productCategories from "../../components/productCategories"
 
 const product = ({ data }) => {
-  const { nextPage, previousPage, page } = data
+ 
+  const {  product } = data
   const {
     name,
     slug,
@@ -15,7 +16,7 @@ const product = ({ data }) => {
     image,
     shortDescription,
     databaseId,
-  } = page
+  } = product
   const uri = '/product/' + slug
 
   return (
@@ -64,28 +65,11 @@ const product = ({ data }) => {
 }
 
 export const query = graphql`
-{
-  wpProductCategory(slug: {eq: "accessories"}) {
-    products {
-        nodes {
-      id
-      slug
-      name
-      databaseId
-      image {
-        altText
-        localFile {
-          publicURL
-        }
-        mediaDetails {
-          width
-          height
-        }
+  query product($id: String!) {
+      product: wpProduct(id: { eq: $id }) {
+        ...ProductContent
       }
     }
-    }
-  }
-}
 `
 
 export default product;

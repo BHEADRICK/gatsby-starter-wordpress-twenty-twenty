@@ -47,7 +47,6 @@ module.exports = async ({ actions, graphql }, options) => {
           slug
           id
           date
-          ${graphqlSingleName === "page" ? "isFrontPage" : ""}
         }
       }
     }
