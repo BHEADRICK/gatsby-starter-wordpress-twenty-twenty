@@ -15,7 +15,6 @@ const ProductList = () =>{
           }}
   `)
 
-console.log(data)
 
 
 return (
