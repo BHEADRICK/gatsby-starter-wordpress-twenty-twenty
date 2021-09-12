@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 import FeaturedMedia from "../../components/FeaturedMedia"
-import ProductList from "../../components/ProductList"
 
 const page = ({ data }) => {
   const { page } = data
@@ -35,7 +34,7 @@ const page = ({ data }) => {
             className="entry-content"
             dangerouslySetInnerHTML={{ __html: content }}
           />
-      <ProductList/>
+    
         </div>
       </article>
     </Layout>
